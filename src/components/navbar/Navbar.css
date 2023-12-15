@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #282c34;
+    display: flex;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.elementNavbar{
+    margin-left: 0.5%;
+    margin-right: 3%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1e1e1e;
+    border: 1px solid #7b8386;
+    cursor: pointer;
+    font-size: 2vw;
+    color: white;
+}
+.elementNavbar:hover{
+    background-color: #282c34;
+}
