@@ -31,17 +31,17 @@ const DespreMine = ({setViewProiecte, setViewDespreMine}) => {
                 <div className="container-halfrow conturi">
                     <div>
                         <a href="https://play.google.com/store/apps/dev?id=5253973682959814913" target="_blank" rel="noreferrer" className="poza-contact">
-                            <img src={require('../../playstore.png')} alt=""/>
+                                <img src={require('../../playstore.png')} alt=""/>
                         </a>
                     </div>
                     <div>
                         <a href="https://github.com/cristibadea777" target="_blank" rel="noreferrer" className="poza-contact">
-                            <img style={{maxWidth: "50%"}} src={require('../../github.png')} alt=""/>
+                                <img src={require('../../github.png')} alt=""/>
                         </a>
                     </div>
                     <div>
                         <a href="https://www.linkedin.com/in/cristian-badea-b976b8220/" target="_blank" rel="noreferrer" className="poza-contact">
-                            <img src={require('../../linkedin.png')} alt=""/>
+                                <img src={require('../../linkedin.png')} alt=""/>
                         </a>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const DespreMine = ({setViewProiecte, setViewDespreMine}) => {
     }
 
     const ContainerDespreMine = () => (
-        <div style={{width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>
+        <div className="container-despre-mine">
             <p>
                 Mă numesc Badea Cristian-Narcis, am 25 de ani si sunt absolvent al FMI Ovidius din Constanta. 
             </p>

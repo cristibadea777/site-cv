@@ -10,7 +10,7 @@ function App() {
   const [viewProiecte,   setViewProiecte]   = useState(false)
 
   return (
-    <div className="App-container">
+    <div style={{maxHeight: "100vh", maxWidth: "100vw", overflow: "hidden"}} className="App-container">
       <Navbar 
         setViewDespreMine = {setViewDespreMine}
         setViewProiecte   = {setViewProiecte}

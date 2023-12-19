@@ -16,9 +16,11 @@
     text-align: center;
     background-color: #1e1e1e;
     border: 1px solid #7b8386;
+    border-radius: 7px;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.3em;
     color: white;
+    transition: background-color 0.3s ease;
 }
 .elementNavbar:hover{
     background-color: #282c34;

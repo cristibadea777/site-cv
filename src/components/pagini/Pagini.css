@@ -1,10 +1,10 @@
 label {
-    font-size: 1.3vw;
+    font-size: 1em;
 }
 
 p { 
     text-indent: 5%;
-    font-size: 1.3vw;
+    font-size: 0.8em;
     margin-top: 1%;
     margin-left: 3%;
     margin-right: 3%;
@@ -34,10 +34,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1%;
 }
 
 .label-nume {
-    font-size: 1.7vw; 
+    font-size: 1em; 
     font-weight: bold;
 }
 
@@ -72,6 +73,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: "left";
+    
 
     &.left  { width: 30%; }
     &.right { width: 70%; }
@@ -79,11 +81,15 @@ p {
         display: flex;
         flex-direction: row;
         align-items: flex-end;        
+        width: 70%;
         div {
-            width: fit-content;
+            width: 33%;
+            height: 100%;            
             img {
-                max-width: 35%;
+                height: auto;
                 max-height: 100%;
+                max-width: 100%;
+                width: auto;
             }
         }
     }
@@ -101,17 +107,139 @@ p {
 .poza-profil{
     width: auto;
     height: 90%; 
-    margin-top: 3%; 
     border-radius: 3%;
 }
 
-.poza-proiect {
+.container-despre-mine {
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-nume-poza-butoane-proiect {
+    height: 35%;
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container-nume-poza-proiect {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container-poze-proiect {
+    display: flex;
+    height: 100%; 
+    width: 100%; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.container-poze {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70%;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 1%;
+    flex-direction: row;
+}
+
+.ancora-poza-proiect{
+    height: 70%;
     width: auto; 
     margin-right: 5%;
     cursor: pointer;
+
+    &.poza-proiect {
+        height: 100%;
+        width: auto; 
+        margin-right: 5%;
+        cursor: pointer;
+    }
+    &.poza-proiect:hover{
+        transform: scale(1.1);
+        border: 1px solid cyan;
+    }
+    
 }
-.poza-proiect:hover{
-    transform: scale(1.1);
-    border: 1px solid cyan;
+
+.buton-proiect {
+    padding: 2% 3%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1e1e1e;
+    border: 1px solid #7b8386;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.3vw;
+    color: white;
+    transition: background-color 0.3s ease;
 }
+.buton-proiect:hover{
+    background-color: #282c34;
+}
+
+.container-functionalitati-proiect {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    overflow-y: auto;
+    margin-top: 5%;
+}
+
+@media (max-width: 1200px) {
+    .container-principal {
+      flex-direction: column;
+    }
+  
+    .container-stanga {
+      order: 1;
+      width: 100%;
+      height: 50%;
+    }
+  
+    .container-dreapta {
+      order: 2; 
+      height: 50%;
+      width: 100%;
+    }
+
+    .container-poze-proiect {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .container-despre-mine {
+        justify-content: flex-start;
+    }
+
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px; /* Set the width of the scrollbar */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #1e1e1e; 
+    border: 1px solid #7b8386; 
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #282c34; 
+  }
+
+  

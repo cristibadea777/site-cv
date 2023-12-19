@@ -26,5 +26,5 @@
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
-  overflow: scroll;
+  overflow: auto;
 }
